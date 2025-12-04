@@ -1,5 +1,5 @@
 // Configuração
-const BASE_URL = 'http://localhost:8080';
+const BASE_URL = 'https://lista-tarefas-api-8vlb.onrender.com/';
 const API_PREFIX = '/tarefas'; 
 
 const qs = (s) => document.querySelector(s);
