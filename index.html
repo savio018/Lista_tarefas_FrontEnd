@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskDash - Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TaskDash</h1>
+        <h2>Organize suas tarefas de forma eficiente</h2>
+    </header>
+
+    <main>
+        <section class="app">
+            <form id="new-task-form" class="new-task-form">
+                <div style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
+                    
+                    <input id="new-task-input" placeholder="Nome da tarefa..." autocomplete="off" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
+                    
+                    <input id="new-task-desc" placeholder="Descrição da tarefa..." autocomplete="off" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
+                    
+                    <input id="new-task-date" type="date" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
+                    
+                    <button type="submit" style="background:var(--accent); color:#fff; border:none; padding:10px; border-radius:8px; cursor:pointer;">Adicionar Tarefa</button>
+                </div>
+            </form>
+
+            <div class="controls">
+                <input id="search" placeholder="Pesquisar tarefas..." />
+                <select id="filter">
+                    <option value="all">Todas</option>
+                    <option value="active">Ativas</option>
+                    <option value="completed">Concluídas</option>
+                </select>
+            </div>
+
+            <ul id="tasks" class="tasks"></ul>
+        </section>
+    </main>
+    <footer>
+
+
+    </footer>   
+
+    <script src="app.js"></script>
+</body>
+</html>

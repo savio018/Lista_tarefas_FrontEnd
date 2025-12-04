@@ -1,0 +1,54 @@
+:root{
+    --bg:#566575;
+    --card:#d9cccc;
+    --accent:rgb(43, 124, 255);
+    --muted:rgb(43, 124, 255);
+}
+*{box-sizing:border-box}
+body{
+    margin:0;
+    font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:#111827;
+}
+header{padding:28px 20px 8px}
+header h1{margin:0;font-size:1.4rem}
+header h2{margin:6px 0 0;color:var(--muted);font-weight:400}
+.app{max-width:720px;margin:20px auto;padding:20px}
+.new-task-form{display:flex;gap:8px;margin-bottom:12px}
+.new-task-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ee}
+.new-task-form button{background:var(--accent);color:#fff;border:none;padding:0 14px;border-radius:8px;cursor:pointer}
+.controls{display:flex;gap:8px;margin-bottom:12px}
+.controls input{flex:1;padding:8px;border-radius:8px;border:1px solid #e6e9ee}
+.controls select{padding:8px;border-radius:8px;border:1px solid #e6e9ee}
+.tasks{list-style:none;padding:0;margin:0}
+.task{display:flex;align-items:center;gap:12px;background:var(--card);padding:12px;border-radius:10px;margin-bottom:8px;border:1px solid #eef2f6}
+.task .title{flex:1}
+.task.completed .title{text-decoration:line-through;color:var(--muted)}
+.task button{background:transparent;border:none;color:var(--muted);cursor:pointer}
+.footer-note{color:var(--muted);text-align:center;padding:12px}
+
+@media (max-width:520px){
+    .app{padding:12px}
+}
+header{
+    text-align:center;
+    color: rgb(43, 124, 255)
+}
+.new-task-form button{
+    background: rgb(43, 124, 255);
+    color: #fff;
+    border:none;
+    padding:0 14px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* tornar a task verde quando concluída */
+.task.completed{
+    background: #d1fae5; /* verde claro */
+    border-color: #a7f3d0;
+}
+.task.completed .title{
+    color: #1dbd9082; /* texto em verde escuro */
+}
