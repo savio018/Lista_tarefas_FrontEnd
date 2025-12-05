@@ -39,9 +39,11 @@ header{
     background: rgb(43, 124, 255);
     color: #fff;
     border:none;
-    padding:0 14px;
-    border-radius:8px;
+    padding:6px 12px;
+    border-radius:6px;
     cursor:pointer;
+    align-self:flex-start;
+    font-size:0.95rem;
 }
 
 /* tornar a task verde quando concluída */
