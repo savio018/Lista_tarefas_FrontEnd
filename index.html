@@ -15,14 +15,14 @@
     <main>
         <section class="app">
             <form id="new-task-form" class="new-task-form">
-                <div style="display: flex; flex-direction: column; gap: 10px; width: 100%;">
-                    
-                    <input id="new-task-input" placeholder="Nome da tarefa..." autocomplete="off" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
-                    
-                    <input id="new-task-desc" placeholder="Descrição da tarefa..." autocomplete="off" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
-                    
-                    <input id="new-task-date" type="date" required style="padding: 10px; border-radius: 8px; border: 1px solid #e6e9ee;">
-                    
+                <div class="form-fields">
+
+                    <input id="new-task-input" placeholder="Nome da tarefa..." autocomplete="off" required>
+
+                    <input id="new-task-desc" placeholder="Descrição da tarefa..." autocomplete="off" required>
+
+                    <input id="new-task-date" type="date" required>
+
                     <button type="submit">Adicionar Tarefa</button>
                 </div>
             </form>

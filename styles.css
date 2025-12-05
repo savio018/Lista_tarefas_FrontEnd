@@ -16,8 +16,10 @@ header h1{margin:0;font-size:1.4rem}
 header h2{margin:6px 0 0;color:var(--muted);font-weight:400}
 .app{max-width:720px;margin:20px auto;padding:20px}
 .new-task-form{display:flex;gap:8px;margin-bottom:12px}
-.new-task-form input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ee}
-.new-task-form button{background:var(--accent);color:#fff;border:none;padding:0 14px;border-radius:8px;cursor:pointer}
+.new-task-form .form-fields{display:flex;flex-direction:column;gap:16px;width:100%}
+.new-task-form input{flex:1;padding:8px;border-radius:6px;border:1px solid #e6e9ee;font-size:0.95rem}
+.new-task-form input[type="date"]{padding:6px 8px}
+.new-task-form button{background:var(--accent);color:#fff;border:none;padding:6px 12px;border-radius:6px;cursor:pointer;align-self:center;font-size:0.9rem}
 .controls{display:flex;gap:8px;margin-bottom:12px}
 .controls input{flex:1;padding:8px;border-radius:8px;border:1px solid #e6e9ee}
 .controls select{padding:8px;border-radius:8px;border:1px solid #e6e9ee}
@@ -42,8 +44,8 @@ header{
     padding:6px 12px;
     border-radius:6px;
     cursor:pointer;
-    align-self:flex-start;
-    font-size:0.95rem;
+    align-self:center;
+    font-size:0.9rem;
 }
 
 /* tornar a task verde quando concluída */
